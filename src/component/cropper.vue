@@ -1,6 +1,11 @@
 <template>
     <ImgCutter v-on:cutDown="cutDown" :rate="ratio"></ImgCutter>
   </template>
+<script lang="ts">
+  export default {
+    name: 'cropper'
+  }
+</script>
   <script setup lang="ts">
   import { computed } from '@vue/runtime-dom';
   import ImgCutter from 'vue-img-cutter'
