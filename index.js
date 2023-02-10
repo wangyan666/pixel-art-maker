@@ -4,8 +4,9 @@ const install = (app) => {
     app.component('cropper', Cropper)
 }
 
-export default Cropper
+Cropper.install = install
 
+export default Cropper
 export {
-    install
+    Cropper
 }
